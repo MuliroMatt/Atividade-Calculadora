@@ -6,7 +6,7 @@ namespace Atividade_Calculadora
         double valor1 = 0;
         double valor2 = 0;
         double resultado = 0;
-        
+
         public Calculadora()
         {
             InitializeComponent();
@@ -41,7 +41,8 @@ namespace Atividade_Calculadora
             lblOper.Text = "/";
         }
         private void btnIgual_Click(object sender, EventArgs e)
-        {   if(txt1 == null || txt2 == null)
+        {
+            if (txt1 == null || txt2 == null)
             {
                 lblResultado.Text = "PREENCHA OS CAMPOS!";
             }
@@ -74,7 +75,7 @@ namespace Atividade_Calculadora
                         break;
                 }
             }
-            
+
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)

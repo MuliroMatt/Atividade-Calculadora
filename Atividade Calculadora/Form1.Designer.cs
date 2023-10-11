@@ -28,153 +28,163 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnMais = new System.Windows.Forms.Button();
-            this.btnMenos = new System.Windows.Forms.Button();
-            this.btnMult = new System.Windows.Forms.Button();
-            this.btnDiv = new System.Windows.Forms.Button();
-            this.txt1 = new System.Windows.Forms.TextBox();
-            this.txt2 = new System.Windows.Forms.TextBox();
-            this.lblOper = new System.Windows.Forms.Label();
-            this.btnIgual = new System.Windows.Forms.Button();
-            this.lblResultado = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnLimpar = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            btnMais = new Button();
+            btnMenos = new Button();
+            btnMult = new Button();
+            btnDiv = new Button();
+            txt1 = new TextBox();
+            txt2 = new TextBox();
+            lblOper = new Label();
+            btnIgual = new Button();
+            lblResultado = new Label();
+            label1 = new Label();
+            btnLimpar = new Button();
+            label2 = new Label();
+            SuspendLayout();
             // 
             // btnMais
             // 
-            this.btnMais.Location = new System.Drawing.Point(12, 123);
-            this.btnMais.Margin = new System.Windows.Forms.Padding(4);
-            this.btnMais.Name = "btnMais";
-            this.btnMais.Size = new System.Drawing.Size(96, 32);
-            this.btnMais.TabIndex = 0;
-            this.btnMais.Text = "+";
-            this.btnMais.UseVisualStyleBackColor = true;
-            this.btnMais.Click += new System.EventHandler(this.btnMais_Click);
+            btnMais.Location = new Point(12, 123);
+            btnMais.Margin = new Padding(4);
+            btnMais.Name = "btnMais";
+            btnMais.Size = new Size(96, 32);
+            btnMais.TabIndex = 0;
+            btnMais.Text = "+";
+            btnMais.UseVisualStyleBackColor = true;
+            btnMais.Click += btnMais_Click;
             // 
             // btnMenos
             // 
-            this.btnMenos.Location = new System.Drawing.Point(137, 123);
-            this.btnMenos.Margin = new System.Windows.Forms.Padding(4);
-            this.btnMenos.Name = "btnMenos";
-            this.btnMenos.Size = new System.Drawing.Size(96, 32);
-            this.btnMenos.TabIndex = 1;
-            this.btnMenos.Text = "-";
-            this.btnMenos.UseVisualStyleBackColor = true;
-            this.btnMenos.Click += new System.EventHandler(this.btnMenos_Click);
+            btnMenos.Location = new Point(137, 123);
+            btnMenos.Margin = new Padding(4);
+            btnMenos.Name = "btnMenos";
+            btnMenos.Size = new Size(96, 32);
+            btnMenos.TabIndex = 1;
+            btnMenos.Text = "-";
+            btnMenos.UseVisualStyleBackColor = true;
+            btnMenos.Click += btnMenos_Click;
             // 
             // btnMult
             // 
-            this.btnMult.Location = new System.Drawing.Point(12, 163);
-            this.btnMult.Margin = new System.Windows.Forms.Padding(4);
-            this.btnMult.Name = "btnMult";
-            this.btnMult.Size = new System.Drawing.Size(96, 32);
-            this.btnMult.TabIndex = 2;
-            this.btnMult.Text = "X";
-            this.btnMult.UseVisualStyleBackColor = true;
-            this.btnMult.Click += new System.EventHandler(this.btnMult_Click);
+            btnMult.Location = new Point(12, 163);
+            btnMult.Margin = new Padding(4);
+            btnMult.Name = "btnMult";
+            btnMult.Size = new Size(96, 32);
+            btnMult.TabIndex = 2;
+            btnMult.Text = "X";
+            btnMult.UseVisualStyleBackColor = true;
+            btnMult.Click += btnMult_Click;
             // 
             // btnDiv
             // 
-            this.btnDiv.Location = new System.Drawing.Point(137, 163);
-            this.btnDiv.Margin = new System.Windows.Forms.Padding(4);
-            this.btnDiv.Name = "btnDiv";
-            this.btnDiv.Size = new System.Drawing.Size(96, 32);
-            this.btnDiv.TabIndex = 3;
-            this.btnDiv.Text = "/";
-            this.btnDiv.UseVisualStyleBackColor = true;
-            this.btnDiv.Click += new System.EventHandler(this.btnDiv_Click);
+            btnDiv.Location = new Point(137, 163);
+            btnDiv.Margin = new Padding(4);
+            btnDiv.Name = "btnDiv";
+            btnDiv.Size = new Size(96, 32);
+            btnDiv.TabIndex = 3;
+            btnDiv.Text = "/";
+            btnDiv.UseVisualStyleBackColor = true;
+            btnDiv.Click += btnDiv_Click;
             // 
             // txt1
             // 
-            this.txt1.Location = new System.Drawing.Point(12, 12);
-            this.txt1.Name = "txt1";
-            this.txt1.Size = new System.Drawing.Size(100, 29);
-            this.txt1.TabIndex = 4;
-            this.txt1.TextChanged += new System.EventHandler(this.txt1_TextChanged);
+            txt1.Location = new Point(12, 12);
+            txt1.Name = "txt1";
+            txt1.Size = new Size(100, 29);
+            txt1.TabIndex = 4;
+            txt1.TextChanged += txt1_TextChanged;
             // 
             // txt2
             // 
-            this.txt2.Location = new System.Drawing.Point(137, 12);
-            this.txt2.Name = "txt2";
-            this.txt2.Size = new System.Drawing.Size(100, 29);
-            this.txt2.TabIndex = 5;
-            this.txt2.TextChanged += new System.EventHandler(this.txt2_TextChanged);
+            txt2.Location = new Point(137, 12);
+            txt2.Name = "txt2";
+            txt2.Size = new Size(100, 29);
+            txt2.TabIndex = 5;
+            txt2.TextChanged += txt2_TextChanged;
             // 
             // lblOper
             // 
-            this.lblOper.AutoSize = true;
-            this.lblOper.Location = new System.Drawing.Point(118, 15);
-            this.lblOper.Name = "lblOper";
-            this.lblOper.Size = new System.Drawing.Size(13, 21);
-            this.lblOper.TabIndex = 6;
-            this.lblOper.Text = ".";
+            lblOper.AutoSize = true;
+            lblOper.Location = new Point(118, 15);
+            lblOper.Name = "lblOper";
+            lblOper.Size = new Size(13, 21);
+            lblOper.TabIndex = 6;
+            lblOper.Text = ".";
             // 
             // btnIgual
             // 
-            this.btnIgual.Location = new System.Drawing.Point(137, 202);
-            this.btnIgual.Name = "btnIgual";
-            this.btnIgual.Size = new System.Drawing.Size(96, 32);
-            this.btnIgual.TabIndex = 7;
-            this.btnIgual.Text = "=";
-            this.btnIgual.UseVisualStyleBackColor = true;
-            this.btnIgual.Click += new System.EventHandler(this.btnIgual_Click);
+            btnIgual.Location = new Point(137, 202);
+            btnIgual.Name = "btnIgual";
+            btnIgual.Size = new Size(96, 32);
+            btnIgual.TabIndex = 7;
+            btnIgual.Text = "=";
+            btnIgual.UseVisualStyleBackColor = true;
+            btnIgual.Click += btnIgual_Click;
             // 
             // lblResultado
             // 
-            this.lblResultado.AutoSize = true;
-            this.lblResultado.Location = new System.Drawing.Point(39, 59);
-            this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(13, 21);
-            this.lblResultado.TabIndex = 8;
-            this.lblResultado.Text = ".";
+            lblResultado.AutoSize = true;
+            lblResultado.Location = new Point(39, 59);
+            lblResultado.Name = "lblResultado";
+            lblResultado.Size = new Size(13, 21);
+            lblResultado.TabIndex = 8;
+            lblResultado.Text = ".";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 59);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(21, 21);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "=";
+            label1.AutoSize = true;
+            label1.Location = new Point(12, 59);
+            label1.Name = "label1";
+            label1.Size = new Size(21, 21);
+            label1.TabIndex = 9;
+            label1.Text = "=";
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Location = new System.Drawing.Point(12, 202);
-            this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(96, 32);
-            this.btnLimpar.TabIndex = 10;
-            this.btnLimpar.Text = "C";
-            this.btnLimpar.UseVisualStyleBackColor = true;
-            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            btnLimpar.Location = new Point(12, 202);
+            btnLimpar.Name = "btnLimpar";
+            btnLimpar.Size = new Size(96, 32);
+            btnLimpar.TabIndex = 10;
+            btnLimpar.Text = "C";
+            btnLimpar.UseVisualStyleBackColor = true;
+            btnLimpar.Click += btnLimpar_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(136, 73);
+            label2.Name = "label2";
+            label2.Size = new Size(52, 21);
+            label2.TabIndex = 11;
+            label2.Text = "label2";
             // 
             // Calculadora
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(251, 249);
-            this.Controls.Add(this.btnLimpar);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lblResultado);
-            this.Controls.Add(this.btnIgual);
-            this.Controls.Add(this.lblOper);
-            this.Controls.Add(this.txt2);
-            this.Controls.Add(this.txt1);
-            this.Controls.Add(this.btnDiv);
-            this.Controls.Add(this.btnMult);
-            this.Controls.Add(this.btnMenos);
-            this.Controls.Add(this.btnMais);
-            this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "Calculadora";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(9F, 21F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(251, 249);
+            Controls.Add(label2);
+            Controls.Add(btnLimpar);
+            Controls.Add(label1);
+            Controls.Add(lblResultado);
+            Controls.Add(btnIgual);
+            Controls.Add(lblOper);
+            Controls.Add(txt2);
+            Controls.Add(txt1);
+            Controls.Add(btnDiv);
+            Controls.Add(btnMult);
+            Controls.Add(btnMenos);
+            Controls.Add(btnMais);
+            Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(4);
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "Calculadora";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -190,5 +200,6 @@
         private Label lblResultado;
         private Label label1;
         private Button btnLimpar;
+        private Label label2;
     }
 }
