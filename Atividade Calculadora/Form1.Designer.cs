@@ -39,7 +39,6 @@
             lblResultado = new Label();
             label1 = new Label();
             btnLimpar = new Button();
-            label2 = new Label();
             SuspendLayout();
             // 
             // btnMais
@@ -126,9 +125,9 @@
             lblResultado.AutoSize = true;
             lblResultado.Location = new Point(39, 59);
             lblResultado.Name = "lblResultado";
-            lblResultado.Size = new Size(13, 21);
+            lblResultado.Size = new Size(19, 21);
             lblResultado.TabIndex = 8;
-            lblResultado.Text = ".";
+            lblResultado.Text = "0";
             // 
             // label1
             // 
@@ -149,21 +148,11 @@
             btnLimpar.UseVisualStyleBackColor = true;
             btnLimpar.Click += btnLimpar_Click;
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(136, 73);
-            label2.Name = "label2";
-            label2.Size = new Size(52, 21);
-            label2.TabIndex = 11;
-            label2.Text = "label2";
-            // 
             // Calculadora
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(251, 249);
-            Controls.Add(label2);
             Controls.Add(btnLimpar);
             Controls.Add(label1);
             Controls.Add(lblResultado);
@@ -200,6 +189,5 @@
         private Label lblResultado;
         private Label label1;
         private Button btnLimpar;
-        private Label label2;
     }
 }

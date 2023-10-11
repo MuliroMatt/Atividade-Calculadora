@@ -42,10 +42,17 @@ namespace Atividade_Calculadora
         }
         private void btnIgual_Click(object sender, EventArgs e)
         {
+            
+
             if (txt1 == null || txt2 == null)
             {
                 lblResultado.Text = "PREENCHA OS CAMPOS!";
             }
+            //else if(txt1 == null)
+            //{
+            //    lblResultado.Text = "PREENCHA OS CAMPOS!";
+            //    valor2 = double.Parse(txt2.Text);
+            //}
             else
             {
                 switch (lblOper.Text)
@@ -82,7 +89,8 @@ namespace Atividade_Calculadora
         {
             txt1.Text = "";
             txt2.Text = "";
-            lblResultado.Text = "";
+            lblResultado.Text = "0";
+            lblOper.Text = ".";
         }
     }
 }
