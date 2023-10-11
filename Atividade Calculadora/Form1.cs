@@ -14,12 +14,12 @@ namespace Atividade_Calculadora
 
         private void txt1_TextChanged(object sender, EventArgs e)
         {
-            valor1 = double.Parse(txt1.Text);
+            
         }
 
         private void txt2_TextChanged(object sender, EventArgs e)
         {
-            valor2 = double.Parse(txt2.Text);
+            
         }
 
         private void btnMais_Click(object sender, EventArgs e)
@@ -48,6 +48,9 @@ namespace Atividade_Calculadora
             }
             else
             {
+                valor1 = double.Parse(txt1.Text);
+                valor2 = double.Parse(txt2.Text);
+
                 switch (lblOper.Text)
                 {
                     case "+":
