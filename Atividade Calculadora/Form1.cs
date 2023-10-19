@@ -24,29 +24,62 @@ namespace Atividade_Calculadora
 
         private void btnMais_Click(object sender, EventArgs e)
         {
-            lblOper.Text = "+";
+            
         }
         private void btnMenos_Click(object sender, EventArgs e)
         {
-            lblOper.Text = "-";
+            
         }
 
         private void btnMult_Click(object sender, EventArgs e)
         {
-            lblOper.Text = "X";
+            
         }
 
         private void btnDiv_Click(object sender, EventArgs e)
         {
-            lblOper.Text = "/";
+            
         }
         private void btnIgual_Click(object sender, EventArgs e)
         {
-            if (txt1 == null || txt2 == null)
-            {
-                lblResultado.Text = "PREENCHA OS CAMPOS!";
-            }
-            else
+
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnMais_Click_1(object sender, EventArgs e)
+        {
+            lblOper.Text = "+";
+        }
+
+        private void btnMenos_Click_1(object sender, EventArgs e)
+        {
+            lblOper.Text = "-";
+        }
+
+        private void btnMult_Click_1(object sender, EventArgs e)
+        {
+            lblOper.Text = "X";
+        }
+
+        private void btnDiv_Click_1(object sender, EventArgs e)
+        {
+            lblOper.Text = "/";
+        }
+
+        private void btnLimpar_Click_1(object sender, EventArgs e)
+        {
+            txt1.Text = "";
+            txt2.Text = "";
+            lblResultado.Text = "";
+        }
+
+        private void btnIgual_Click_1(object sender, EventArgs e)
+        {
+            try
             {
                 valor1 = double.Parse(txt1.Text);
                 valor2 = double.Parse(txt2.Text);
@@ -78,14 +111,10 @@ namespace Atividade_Calculadora
                         break;
                 }
             }
-
-        }
-
-        private void btnLimpar_Click(object sender, EventArgs e)
-        {
-            txt1.Text = "";
-            txt2.Text = "";
-            lblResultado.Text = "";
+            catch
+            {
+                lblResultado.Text = "PREENCHA OS CAMPOS";
+            }
         }
     }
 }
